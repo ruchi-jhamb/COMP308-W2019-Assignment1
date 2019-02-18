@@ -1,0 +1,38 @@
+<% include ./partials/header.ejs %>
+
+    <div class="container">
+      <div class="jumbotron">
+
+      <!--Home page content-->
+      <% if (title == "Home") { %>
+        <h1 class="display-4">Welcome to career portfolio website...<%= title %></h1>
+        </br>
+        <h3>  All the information you are looking for is provided in this website...  </h3>
+        </br>
+        
+        <i>"“Anyone who has never made a mistake has never tried anything new ” (Albert Einstein)"</i>
+        </br>
+        
+        <a class="btn btn-primary" href="/About" role="button">About Me</a> 
+        <% } %>
+
+        <!--About content-->         
+        <% if (title == "Contact") { %>
+          <img src="Ruchi.jpeg" width="220" heigth="300"> 
+         <h2><b><i><u>Name: Ruchi</u></b></i><h2>
+         <h3> 2+ years of experience as a software tester and hands on experience in coding laguages like java, c, c++ and many more...
+         </h3>
+         <h3>College: -Centennial College</h3>
+         <h3>Campus: -Progress Campus</h3>
+         <h3>Course: Advanced diploma in Software Engineering Technology </h3>
+         <h3>Student Number: - 300982665</h3>
+         <h4>Please find the resume attached below..</h4>
+          <a class="btn btn-primary" href="resume.pdf" role="button">Resume</a>
+          
+          
+          <a class="btn btn-primary" href="/contact-list" role="button">Contact List</a>
+        <% } %>
+      </div>
+    </div>
+
+<% include ./partials/footer.ejs %>
